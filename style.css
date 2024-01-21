@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Underdog', system-ui;
+	
+}
+
+.about_film{
+	height: 100vh;
+	background-image: url(img/22.png);
+	background-size: cover;
+	display: flex;
+	
+}
+
+.about_film input{
+	display: none;
+}
+
+.about_film label img{
+	height: 100%;
+}
+
+label{
+	box-shadow: 2px 0 8px 2px black, -2px 0 5px 1px white;
+	cursor: pointer;
+}
+
+.about_item1,
+.about_item2,
+.about_item3,
+.about_item4,
+.about_item5{
+	width: 0;
+	overflow: hidden;
+	background-color: rgba(209, 238, 255, 0.8);
+	transition: all 0.5s linear;
+}
+
+#data1:checked ~ .about_item1,
+#data2:checked ~ .about_item2,	
+#data3:checked ~ .about_item3,
+#data4:checked ~ .about_item4,
+#data5:checked ~ .about_item5{
+	width: 100%;
+}
+
+.about_item1 img,
+
+.about_item3 img,
+
+.about_item5 img{
+	width: 400px;
+	height: 500px;
+	object-fit: cover;
+	padding: 20px;
+	float: right;
+}
+
+.about_item2 img,
+.about_item4 img{
+	float:left;
+}
+
+
+.about_item1 p,
+.about_item2 p,
+.about_item3 p,
+.about_item4 p,
+.about_item5 p{
+	font-size: 22px;
+	padding: 20px;
+}
+
+
+#data1:checked ~ .about_label_1,
+#data2:checked ~ .about_label_2,
+#data3:checked ~ .about_label_3,
+#data4:checked ~ .about_label_4,
+#data5:checked ~ .about_label_5{
+	cursor: default;
+}
